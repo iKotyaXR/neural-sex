@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NEURAL</title>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        margin: 0;
+      }
+      label {
+        display: flex;
+        flex-direction: row;
+      }
+      input {
+        width: 100px;
+      }
+      button {
+        width: 100px;
+      }
+      #cns {
+        flex-direction: row;
+      }
+      .info {
+        position: absolute;
+        left: 520px;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="browser.js"></script>
+    <canvas id="root" width="500px" height="500px"></canvas>
+
+    <label id="cns">
+      <button id="clear">Очистить</button>
+    </label>
+    <label>
+      <input type="text" placeholder="Значение" id="canvasInput" />
+      <button id="train">Тренировать</button>
+      <button id="trainX">Тренировать Новая</button>
+    </label>
+    <div class="info"></div>
+    <script src="rout.js"></script>
+  </body>
+</html>
